@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carlo Amparo - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            padding: 2rem;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .projects,
+        .contact {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Carlo Amparo</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="main-content">
+            <section id="about">
+                <hgroup>
+                    <h2>About Me</h2>
+                    <h3>Geographic Information Systems Specialist at Philippine Statistics Authority</h3>
+                </hgroup>
+                <p>When I'm not busy making the web a prettier place, you can find me sipping artisanal coffee and plotting my next adventure. As a programmer in the GIS Department at the Philippine Statistics Authority, I turn caffeine into code, and I do it with flair. From crafting pixel-perfect designs to ensuring seamless user experiences, my passion for tech knows no bounds.
+
+Catch me if you can – I’m always on the move, blending creativity with functionality, one keystroke at a time.</p>
+                <figure>
+                    <img src="assets/pfp_img.jpg" alt="Profile picture of Carlo Amparo" class="profile-pic">
+                    <figcaption><a href="https://www.youtube.com/watch?v=L8XbI9aJOXk" target="_blank">click me to claim your P500 GCash giveaway! </a></figcaption>
+                </figure>
+            </section>
+
+            <section id="projects">
+                <hgroup>
+                    <h2><strong>Projects</strong></h2>
+                </hgroup>
+                <hgroup>
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPSAgovph%2Fvideos%2F424740093877044%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    <p>Bawat isa sa atin ay bahagi ng mas malaking kwento. 
+                        Sa 2024 Census of Population and Community-Based Monitoring System (POPCEN-CBMS), papakinggan natin ang kwento mo. 
+                        Ang pinagsama-sama nating kwento ang magdagdala sa atin tungo sa mas maunlad na Pilipinas! 
+                        Narito na ang official tagline video ng 2024 #POPCENCBMS.</p>
+                </hgroup>
+            </section>
+        </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Subscribe to my YouTube Channel </h2>
+                    <h3>baka naman.. malay mo may good stuff na mai upload hehe😁</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name"
+                        required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" aria-label="Email Address"
+                        required>
+                    <button type="submit"
+                        onclick="window.location.href='https://www.youtube.com/@konose_1'">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <section aria-label="Contact example" id='contact'>
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Email me baby at: </h2>
+                </hgroup>
+                <form class="grid">
+                    <h3>
+                        <a href="mailto:receiver@carloamparo22@gmail.com" class="button">carloamparo22@gmail.com</a>
+                    </h3>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small>
+            <a href="https://x.com/chocolatemintt1">𝕏</a> • <a
+                href="https://www.facebook.com/smurf.carloamparo22">facebook</a>
+        </small>
+    </footer>
+</body>
+
+</html>
