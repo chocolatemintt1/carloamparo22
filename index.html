@@ -32,11 +32,13 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
             max-width: 100%;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -44,7 +46,7 @@
             width: 100%;
             height: 100%;
             border: 0;
-}
+        }
     </style>
 </head>
 
@@ -170,22 +172,16 @@
                         音乃瀬～奏で～～～す！</h3>
                 </hgroup>
                 <hgroup>
-                    <form class="grid">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/GZHhb_zHVno?si=9j3bThnzdRe-G-io"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="container"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GZHhb_zHVno?si=9j3bThnzdRe-G-io"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="container"></iframe>
                 </hgroup>
-                <button class="button" onclick=goToLink()>Subscribe</button>
+                <form action="https://www.youtube.com/@OtonoseKanade" method="get" target="_blank">
+                    <button type="submit">Subscribe</button>
                 </form>
             </article>
         </div>
-        <script>
-            function goToLink() {
-                window.location.href = "https://www.youtube.com/@OtonoseKanade";
-            }
-        </script>
     </section>
 
     <section aria-label="Contact example" id='contact'>
