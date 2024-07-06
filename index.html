@@ -64,8 +64,16 @@
             border: none;
             padding: 8px;
             text-align: left;
-            font-size:xx-small;
+            font-size: xx-small;
         }
+
+        .contact-row {
+            word-wrap: break-word;
+            /* Ensures long words are wrapped */
+            word-break: break-all;
+            /* Forces wrapping of long words */
+        }
+
     </style>
 </head>
 
@@ -198,7 +206,7 @@
                                                     <td><i>July 02, 2023</i></td>
                                                     <td>IT Support</td>
                                                     <td>Landers Superstore <i>(Las Pinas)</i></td>
-                                                    <td><a
+                                                    <td class="contact-row"><a
                                                             href="mailto:recruitment@landers.ph">recruitment@landers.ph</a>
                                                     </td>
                                                 </tr>
