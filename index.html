@@ -11,7 +11,6 @@
             padding: 2rem;
         }
 
-
         .profile-pic {
             border-radius: 50%;
             width: 150px;
@@ -223,6 +222,10 @@
                                     </div>
                                 </hgroup>
                             </details>
+                            <details>
+                                <summary role="button" class="outline">Certificates/Training</summary>
+                                    <p><i>nothing to display..</i></p>
+                            </details>
                         </article>
                     </div>
                 </section>
@@ -309,8 +312,8 @@
             event.preventDefault();
 
             let message = document.getElementById('message').value;
-            let email = ""; // Replace with your Gmail address
-            let subject = "Chatbox Message";
+            let email = "carloamparo22@gmail.com"; // Replace with your Gmail address
+            let subject = "Comment/Feedback";
             let mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
             window.location.href = mailtoLink;
