@@ -11,6 +11,7 @@
             padding: 2rem;
         }
 
+
         .profile-pic {
             border-radius: 50%;
             width: 150px;
@@ -201,8 +202,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><i>May 01, 2022</i></th>
-                                                    <td><i>May 02, 2023</i></td>
+                                                    <th scope="row"><i>July 01, 2022</i></th>
+                                                    <td><i>July 02, 2023</i></td>
                                                     <td>IT Support</td>
                                                     <td><a href="https://www.facebook.com/LandersPH">Landers
                                                             Superstore<i> (Las Pinas)</i></a></td>
@@ -287,10 +288,10 @@
                 <hgroup>
                     <h2>If you have any questions or concerns, please don't hesitate to email me</h2>
                 </hgroup>
-                <form class="grid">
-                    <h3>
-                        <a href="mailto:carloamparo22@gmail.com" class="button">carloamparo22@gmail.com</a>
-                    </h3>
+                <form id="chatForm">
+                    <textarea id="message" placeholder="Write a comment..." aria-label="Comment Box">
+</textarea>
+                    <button type="submit">Submit</button>
                 </form>
             </article>
         </div>
@@ -302,6 +303,19 @@
                 href="https://www.facebook.com/smurf.carloamparo22">facebook</a>
         </small>
     </footer>
+
+    <script>
+        document.getElementById('chatForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            let message = document.getElementById('message').value;
+            let email = ""; // Replace with your Gmail address
+            let subject = "Chatbox Message";
+            let mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 
 </html>
